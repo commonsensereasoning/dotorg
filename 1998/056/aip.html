@@ -1,0 +1,346 @@
+<p><HTML>
+<BODY BGCOLOR="#fffaff" TEXT="#000000" LINK="0000ff" VLINK="000080">
+<div style="background:#ff6; padding:15px; border:1px solid #f00; text-align:center; font-weight:bold; width:95%;">
+This page is a historical archive. For the latest information please visit <a href="http://www.commonsensereasoning.org/">commonsensereasoning.org</a>.
+</div>
+
+<table border=1 cellspacing=0 cellpadding=5>
+<tr>
+<td width="68%" bgcolor="#ccddee">
+<h2>Eyal Amir</h2>
+<h2>Point-Sensitive Circumscription.</h2>
+</td><td width="12%" align=right valign=top bgcolor="#d4ddbb">
+<b>c-fcs-98-56<br>&#160;<br>
+[<a href="/ext/etai/nj/fcs-98/056/paper.ps">original</a>]<br>
+[<a href="/ext/etai/nj/fcs-98/056/abstract.html">abstract</a>]<br>
+
+
+  </td><td width="20%" align=right valign=top bgcolor="#dddddd">
+[<a href="mailto:eyal@Steam.Stanford.edu">mail to author</a>]<br>&#160;<br>
+
+  [<a href="mailto: erisa@ida.liu.se">mail to moderator</a>]<br>
+  [<a href="../debproc.html">debate
+     procedure</a>]<br>
+  [<a href="../copyright.html">copyright</a>]
+  </tr></table>
+
+<center>
+<h1>Overview of interactions</h1>
+</center>
+
+<table width="100%" border=1 cellspacing=0 cellpadding=5>
+
+<tr bgcolor="#e0e8e8">
+<th width="4%" align=left>N:o</th>
+<th width="38%" align=left>Question</th>
+<th width="38%" align=left>Answer(s)</th>
+<th width="20%" align=left>Continued discussion</th>
+</tr>
+
+
+<tr bgcolor="#d4ddbb">
+<td width="4%" align=center valign=top bgcolor="dddddd">1 </td>
+
+<td width="40%" valign=top>
+    <a href="#001">8.1&#160;&#160;Erik Sandewall</a><br>
+</td>
+<td width="16%" valign=top>
+    <a href="#002">2.3&#160;&#160;Eyal Amir</a><br>
+</td>
+<td width="40%" valign=top>
+    <a href="#003">8.3&#160;&#160;Patrick Doherty</a><br>
+</td>
+</tr>
+</table>
+<p><font size=+1><a name="001">Q1. </a><b><a href="http://www.ida.liu.se/~erisa/index-eng.html">Erik Sandewall</a></b>:</font><p>
+<p>I have questions about your section 6, "Applying Point-Sensitive
+Circumscription to Theories of Action", which I can not make sense of.
+You first review the formulation of PCM (Prototypical Chronological
+Minimization) in pointwise circumscription, and then write (p. 71):
+<p>
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em>
+
+  We do not claim that Point-Sensitive Circumscription can formalize
+  the entire K-IA ontological class, but that it can take you farther
+  than Pointwise circumscription can.
+</em></font></td></tr></table>
+
+<p>
+Let me briefly review the relevant aspect of Features and fluents,
+in order to put what follows into context.
+The K-IA ontological class allows for
+scenarios with nondeterministic actions, actions with extended duration
+in time and internal structure, and all combinations of prediction and
+postdiction. It does not model causality or other forms of ramification,
+nor concurrency, etc.
+<p>
+For this K-IA class, we have studied a number of <em>entailment methods</em>,
+each of which can then be reexpressed in e.g. pointwise circumscription.
+PCM is one of those entailment methods. Each of them is defined in
+terms of preference criteria or other selection criteria on models, 
+and it is these criteria that may be translated e.g. to circumscription
+as a way of proceeding towards an implementation. For each entailment
+method, there is also an assessment of range of applicability. This
+assessment is model-theoretic, and is independent of the choice
+of implementation method.
+<p>
+In this framework it is perfectly reasonable, as you do, to evaluate
+a variant of circumscription with respect to whether or not it is
+capable of expressing a particular entailment method, or even a 
+collection of them. This makes much more sense than analyzing
+circumscription variants directly in terms of test examples, since
+then so much depends on the choice of axiomatization.
+<p>
+Though I agree with your methodology up to that point, I do not 
+understand the concrete case where it is applied. You only discuss
+how PCM is rendered in variants of circumscription, but Doherty has 
+already shown how to express PCM in pointwise circumscription.
+If your variant of circumscription is able to handle more examples
+correctly within the range of K-IA, it could therefore only be
+because it were an inaccurate rendering of PCM.
+<p>
+Also, although the range of applicability of PCM is only a limited
+part of K-IA, there are other entailment methods such as PMON
+which are correct for K-IA, and which can also be expressed in
+pointwise circumscription following Doherty. This makes it even
+more strange how point-sensitive circumscription can do something
+that pointwise circumscription can not, with respect to the K-IA
+class.
+<p>
+You also discuss a simple case of ramification using the duality
+between the <em>dead</em> and <em>alive</em> properties. This of course is
+not within K-IA, as you also observe. However, there are certainly
+known methods that handle such simple ramifications (as well somewhat
+less trivial ones) correctly and that have been expressed or 
+re-expressed using pointwise circumscription.
+<p>
+Could you help me understand your contribution in these respects?
+<p>
+<p><font size=+1><a name="002">A1. </a><b><a href="http://www-formal.stanford.edu/eyal/">Eyal Amir</a></b> (2.3):</font><p>
+<p>Dear Erik. Thank you much for your insightful comments.
+You write
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em>
+
+...
+The K-IA ontological class allows for
+scenarios with nondeterministic actions, actions with extended duration
+in time and internal structure, and all combinations of prediction and
+postdiction. It does not model causality or other forms of ramification,
+nor concurrency, etc.
+...
+For this K-IA class, we have studied a number of <em>entailment methods</em>,
+each of which can then be reexpressed in e.g. pointwise circumscription.
+PCM is one of those entailment methods.
+....
+In this framework it is perfectly reasonable, as you do, to evaluate
+a variant of circumscription with respect to whether or not it is
+capable of expressing a particular entailment method, or even a 
+collection of them.
+...
+<p>
+Though I agree with your methodology up to that point, I do not 
+understand the concrete case where it is applied. You only discuss
+how PCM is rendered in variants of circumscription, but Doherty has 
+already shown how to express PCM in pointwise circumscription.
+If your variant of circumscription is able to handle more examples
+correctly within the range of K-IA, it could therefore only be
+because it were an inaccurate rendering of PCM.
+</em></font></td></tr></table>
+
+<p>
+[For the reader: PCM is defined roughly as follows (see
+<b><font color="#005588">[s-Gabbay-94-999]</font></b> for more details):
+Interpretations <formula><font color="#0000FF"><b>&#160;<em>I</em>&#160;<tt><font size=+1>&#171;</font></tt><sub><font size=-1><em>pcm</em></font></sub>&#160;<em>I</em><em>'</em>&#160;</font></b></formula> iff <formula><font color="#0000FF"><b>&#160;<em>M</em><tt>&#160;=&#160;</tt><em>M</em><em>'</em>&#160;</font></b></formula> 
+(the objects are the same) and there is <formula><font color="#0000FF"><b>&#160;<em>t</em><sub><em>0</em></sub>&#160;</font></b></formula> s.t.
+<ol>
+
+<li>for all <formula><font color="#0000FF"><b>&#160;<em>t</em><tt>&#160;&lt;&#160;</tt><em>t</em><sub><em>0</em></sub>&#160;</font></b></formula>,  <formula><font color="#0000FF"><b>&#160;<em>R</em>(<em>t</em>)<tt>&#160;=&#160;</tt><em>R</em><em>'</em>(<em>t</em>)&#160;</font></b></formula>  
+(the fluents are identical in <formula><font color="#0000FF"><b>&#160;<em>I</em>&#160;</font></b></formula> and <formula><font color="#0000FF"><b>&#160;<em>I</em><em>'</em>&#160;</font></b></formula> before <formula><font color="#0000FF"><b>&#160;<em>t</em><sub><em>0</em></sub>&#160;</font></b></formula>) and
+<li><formula><font color="#0000FF"><b>&#160;</b><em>breakset</em><b>(<em>I</em>,&#160;<em>t</em><sub><em>0</em></sub>)<tt>&#160;c&#160;</tt></b><em>breakset</em><b>(<em>I</em><em>'</em>,&#160;<em>t</em><sub><em>0</em></sub>)&#160;</font></b></formula> 
+  (the fluent value changes from <formula><font color="#0000FF"><b>&#160;<em>t</em><sub><em>0</em></sub><em>-</em><em>1</em>&#160;</font></b></formula> to <formula><font color="#0000FF"><b>&#160;<em>t</em><sub><em>0</em></sub>&#160;</font></b></formula>
+    in <formula><font color="#0000FF"><b>&#160;<em>I</em>&#160;</font></b></formula> are a subset of the appropriate changes in <formula><font color="#0000FF"><b>&#160;<em>I</em><em>'</em>&#160;</font></b></formula>).
+</ol>
+
+Then the set of 
+models for PCM is <formula><font color="#0000FF"><b>&#160;<em>S</em><sub><font size=-1><em>pcm</em></font></sub>(<em>T</em>)<tt>&#160;=&#160;</tt></b><em>Min</em><b>(&#160;<tt><font size=+1>&#171;</font></tt><sub><font size=-1><em>pcm</em></font></sub>&#160;,&#160;<em>models</em>(<em>T</em>))&#160;</font></b></formula>.]
+<p>
+Pointwise Circumscription (I shall abbreviate it here Pt-Circ) is a 
+special case of
+Point-Sensitive Circumscription (abbreviated here Pt-Sens), and so PCM can
+be expressed in Pt-Sens the same way 
+<b><font color="#005588">[c-ictl-94-82]</font></b>
+shows with Pt-Circ. However,
+Doherty and Lukaszewicz showed that Pt-Circ expresses PCM only for the 
+ontological
+class Kp-IAex, in which no observations later than time <formula><font color="#0000FF"><b>&#160;<em>t</em><tt>&#160;=&#160;</tt><em>0</em>&#160;</font></b></formula> are allowed. 
+The example
+I give in the paper shows that Pt-Sens may be able to express PCM 
+outside Kp-IA
+(notice that the example I give falls within K-IA, as the 
+"ramification" is accounted
+for by domain constraints (observations for time later than 0)). 
+I did not prove a higher lower-bound, though. I just showed cases 
+outside Kp-IA where Pt-Circ fails and Pt-Sens succeeds.
+<p>
+You then write
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em>
+
+Also, although the range of applicability of PCM is only a limited
+part of K-IA, there are other entailment methods such as PMON
+which are correct for K-IA, and which can also be expressed in
+pointwise circumscription following Doherty. This makes it even
+more strange how point-sensitive circumscription can do something
+that pointwise circumscription can not, with respect to the K-IA
+class.
+</em></font></td></tr></table>
+
+My claim was that we may be able to avoid filtering (the way 
+<b><font color="#005588">[c-ictl-94-82]</font></b>
+does) in grasping K-IA. I did not prove that either. 
+Future work?...
+<p>
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em>
+
+You also discuss a simple case of ramification using the duality
+between the <em>dead</em> and <em>alive</em> properties. This of course is
+not within K-IA, as you also observe. However, there are certainly
+known methods that handle such simple ramifications (as well somewhat
+less trivial ones) correctly and that have been expressed or 
+re-expressed using pointwise circumscription.
+</em></font></td></tr></table>
+
+Although the simple example I gave is within K-IA, I support the 
+claim that Pt-Sens can treat some forms of ramification (a first 
+hint at that was made in a paper of mine in NRAC'97). I am not aware 
+of previous expressions of ramifications using Pt-Circ and will be 
+happy to get some pointers.
+<p>
+Eyal
+<p><b><em><font color="brown">References:</font></em></b><center><table width="96%">
+<tr><td width="16%" valign="top"><font color="#005588"><b><a href="http://www.ida.liu.se/ext/acres/cf/ictl/1994/indlis.html#082">c-ictl-94-82</a></b></font></td><td width="84%">Patrick Doherty and Witold Lukaszewicz.<br>
+Circumscribing Features and Fluents.<br>
+<font color="#005588">Proc. International Conference on Temporal Logic, 1994, pp. 82-100.</font><br>
+</td></tr>
+<tr><td width="16%" valign="top"><font color="#005588"><b><a href="http://www.ida.liu.se/ext/acres/cb/Gabbay/1994/indlis.html#999">s-Gabbay-94-999</a></b></font></td><td width="84%"><a href="http://www.ida.liu.se/~erisa/index-eng.html">Erik Sandewall</a> and <a href="http://robotics.Stanford.EDU/~shoham/">Yoav Shoham</a>.<br>
+Nonmonotonic Temporal Reasoning.<br>
+<font color="#005588">In: <a href="http://theory.doc.ic.ac.uk/~ar3/gabbay.html">Dov M. Gabbay</a>, C.J. Hogger, and J.A. Robinson(ed): Handbook of Logic in Artificial Intelligence and Logic Programming.
+Volume 4: Epistemic and Temporal Reasoning.<br>&#160;&#160;&#160;&#160;Oxford University Press.
+</font><br></td></tr>
+</table></center>
+<p><font size=+1><a name="003">C1-1. </a><b><a href="http://www.ida.liu.se/labs/kplab/people/patdo/">Patrick Doherty</a></b> (8.3):</font><p>
+<p>Hi Eyal,
+<p>
+A few comments regarding your paper and then a few regarding your 
+comments to Erik. First, your paper:
+<p>
+First off, I think your notion of Pt-Sens circumscription is an
+interesting technical result, but wonder about its widespread
+applicability (see comments below). The "counter-intuitive example"
+(your description) you provide as a reason for proposing Pt-Sens 
+circumscription would appear to be more counter-intuitive in the 
+way the policy is set up rather than in the result. The reason 
+for introducing pointwise circumscription in the first place <b>is</b>
+so that one can vary <b>parts</b> of an extension while fixing other 
+parts. To introduce a policy where you vary the whole extension 
+of the predicate you are minimizing strikes me as being a bit 
+extreme. But, I suppose one could find more intuitive 
+"counter-intuitive" examples to prove your case, which do not
+violate one's sense of proper use of pointwise circumscription
+(if there is such a thing!)
+<p>
+You also state in section 7 that
+<p>
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em> pointwise circumscription is sufficient if we restrict ourselves 
+ to deterministic actions and to cases in which there are no domain 
+ constraints.
+<p>
+</em></font></td></tr></table>Well, the K-IA class deals with non-deterministic actions just fine
+and in the case of PMON, or its extension PMON(RC) discussed below,
+where ramification can be dealt with using a combination of domain
+and dependency constraints, syntactic characterizations for both can be
+defined using pointwise circumscription. Although it is computationally 
+more feasible to choose a different type of circumscription. You can 
+check my ecai94 paper or the paper by gustafsson and myself in kr96. 
+In fact, I think you attended the ijcai97 workshop where I 
+demonstrated PMON(RC).
+<p>
+In conclusion, I enjoyed the first part of the paper, but I'd think 
+the second part regarding applications to logics of action and change 
+needs some more work (By the way, I have only read your workshop draft, 
+so you may have fixed things since.)
+<p>
+Now some comments about your and Erik's interaction:
+<p>
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em> Pointwise Circumscription (I shall abbreviate it here Pt-Circ) is a
+ special case of Point-Sensitive Circumscription (abbreviated here
+ Pt-Sens), and so PCM can be expressed in Pt-Sens the same way 
+ <b><font color="#005588">[c-ictl-94-82]</font></b> shows with Pt-Circ. However, Doherty and Lukaszewicz 
+ showed that Pt-Circ expresses PCM only for the ontological class 
+ Kp-IAex, in which no observations later than time <formula></em></font><font color="#0000FF"><b>&#160;<em>t</em><sub><em>0</em></sub>&#160;</font></b><font color="BROWN"><em></formula> are allowed.
+<p>
+</em></font></td></tr></table>The point is that PCM is limited to the class Kp-IAex, and Pt-Circ
+was used to provide a syntactic characterization of PCM's minimization 
+policy, not that Pt-Circ is inherently unable to represent classes 
+which subsume Kp-IAex.
+<p>
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em> My claim was that we may be able to avoid filtering (the way
+ <b><font color="#005588">[c-ictl-94-82]</font></b> does) in grasping K-IA.
+</em></font></td></tr></table>I did not prove that either. Future work?...
+<p>
+Why would you want to avoid filtering? And, if there is a legitimate
+reason, I would imagine you'd want to replace pointwise circumscription
+with a more computationally efficient policy than a generalization of 
+generalized pointwise circumscription which is what Pt-Sens appears to
+be.
+<p>
+<table border=0><tr><td width="4%">&#160;</td><td width="96%"><font color="brown"><em> You also discuss a simple case of ramification using the duality
+ between the <em>dead</em> and <em>alive</em> properties. This of course is
+ not within K-IA, as you also observe. However, there are certainly
+ known methods that handle such simple ramifications (as well somewhat
+ less trivial ones) correctly and that have been expressed or
+ re-expressed using pointwise circumscription.
+<p>
+</em></font></td></tr></table><table border=0><tr><td width="8%">&#160;</td><td width="92%"><font color="green"><em> Although the simple example I gave is within K-IA, I support the
+ claim that Pt-Sens can treat some forms of ramification (a first
+ hint at that was made in a paper of mine in NRAC'97). I am not aware
+ of previous expressions of ramifications using Pt-Circ and will be
+ happy to get some pointers.
+<p>
+</em></font></td></tr></table>In the KR96 paper by Gustafsson and myself, we introduce a
+straightforward technique to extend PMON, which is assessed correct
+for the K-IA class, so that it deals with a broad class of problems 
+associated with ramification. This logic PMON(RC) subsumes K-IA.
+The minimization policy is practically the same as PMON and can
+trivially be defined using pointwise circumscription, although we
+use standard predicate circumscription (in fact predicate completion).
+In fact, we model both the stuffy room example from Winslett and the
+alive/walking example in the paper. There are many more examples
+that you can test using the VITAL tool which I demonstrated at IJCAI97.
+<p>
+regards,
+<p>
+Patrick Doherty
+<p>
+<p><b><em><font color="brown">References:</font></em></b><center><table width="96%">
+<tr><td width="16%" valign="top"><font color="#005588"><b><a href="http://www.ida.liu.se/ext/acres/cf/ictl/1994/indlis.html#082">c-ictl-94-82</a></b></font></td><td width="84%">Patrick Doherty and Witold Lukaszewicz.<br>
+Circumscribing Features and Fluents.<br>
+<font color="#005588">Proc. International Conference on Temporal Logic, 1994, pp. 82-100.</font><br>
+</td></tr>
+</table></center>
+<p><hr>
+<p>This on-line debate page is part of a
+<b><a href="../listing.html">discussion at recent workshop</a></b>;
+similar pages are set up for each of the workshop articles.
+The discussion is organized by the area
+<a href="http://www.ida.liu.se/ext/etai/actions/">Reasoning about
+Actions and Change</a> within the
+<b>Electronic Transactions on Artificial Intelligence</b>
+(<a href="http://www.ida.liu.se/ext/etai/">ETAI</a>).
+<p>
+
+To contribute, please click [mail to moderator] above and send your 
+question or comment as an E-mail message.
+<p>
+<hr>
+<p>
+</body> </html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="-1" />
+		<meta http-equiv="Cache-Control" content="no-store" />
+		<title>Commonsense Reasoning</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/960.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" />
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+	</head>
+	<body>
+		<div class="container_12">
+			<div class="grid_12">
+            	<img src="img/banner.jpg" alt="Commonsense Reasoning" />
+			</div>
+			<div class="clear"></div>
+			<div class="grid_12">
+				<h2 id="page-heading">Commonsense Reasoning ~ Problem Page</h2>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_3">
+				<div class="box menu">
+					<div class="block">
+						<ul class="section menu" id="section-menu">
+                        	                        	<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="organization.html">Organization</a>
+							</li>
+							<li>
+								<a class="current_item" href="problem_page.html">Problem Page</a>
+							</li>
+              <li>
+                <a href="winograd.html">Winograd Schema Challenge</a>
+              </li>
+              <li>
+                <a href="disambiguation.html">Pronoun Disambiguation Problems</a>
+              </li>
+
+              <li>
+                <!--
+                <a href="2015/index.html">Commonsense 2015</a>
+                -->
+								<a class="menuitem">Commonsense 2015</a>
+								<ul class="submenu">
+									<li>
+										<a href="2015/index.html">Information</a>
+									</li>
+									<li>
+										<a href="2015/cfp.html">Call for Papers</a>
+									</li>
+									<li>
+										<a href="2015/committee.html">Committee</a>
+									</li>
+                  <li>
+                    <a href="2015/logistics.html">Author Information</a>
+                  </li>
+									<li>
+										<a href="2015/proceedings.html">Proceedings</a>
+									</li>
+									<li>
+										<a href="2015/schedule.html">Schedule</a>
+									</li>
+									<li>
+										<a href="2015/participants.html">Participants</a>
+									</li>
+								</ul>
+                
+                       
+							</li>
+							<li>
+								<a class="menuitem">Past Symposia</a>
+								<ul class="submenu">
+                  <li>
+                    <a href="2013/index.html">2013 (Cyprus)</a>
+                  </li>
+                  <li>
+                    <a href="2011/index.html">2011 (Stanford)</a>
+                  </li>
+                  <li>
+										<a href="2009/index.html">2009 (Toronto)</a>
+									</li>
+									<li>
+										<a href="2007/index.html">2007 (Stanford)</a>
+									</li>
+									<li>
+										<a href="2005/index.html">2005 (Corfu)</a>
+									</li>
+									<li>
+										<a href="2003/index.html">2003 (Stanford)</a>
+									</li>
+									<li>
+										<a href="2001/index.html">2001 (New York)</a>
+									</li>
+									<li>
+										<a href="1998/index.html">1998 (London)</a>
+									</li>
+								</ul>
+							</li>
+                            <li>
+								<a href="contacts.html">Contact Us</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="grid_9">
+				<div class="box">
+					<h2>Introduction</h2>
+<div class="block">
+  <p>Formalizing the commonsense knowledge needed for even simple reasoning problems is a huge undertaking. For this reason, researchers often study small toy problems, such as planning in the blocks world domain. Because such toy problems can gloss over some of the more interesting research issues, there has been a recent trend toward working on more realistic challenge problems. This page contains a collection of these challenge problems, solutions to some of these problems and some other useful links.</p>
+  <p>The Common Sense Problem Page was originally created by <a href="http://www.ucl.ac.uk/infostudies/rob-miller/">Rob Miller</a>. It is currently maintained by <a href="http://www-formal.stanford.edu/leora/">Leora Morgenstern</a>. Please send email to <a href="mailto:leora@cs.nyu.edu">leora@cs.nyu.edu</a> if you would like to contribute additional problems, solutions, or suggestions.</p>
+</div>
+<h2>The Problems</h2>
+<div class="block">
+  <p>Some challenge commonsense problems are listed below. The full text for these problems can be found on this page; you can either scroll down the page or click on the highlighted links.</p>
+  <p>Many of these problems are listed together with a number of variants. An acceptable solution to a problem should</p>
+  <ul>
+    <li>contain core formalizations that can be re-used to solve other problems</li>
+    <li>solve not only the problem but a wide range of its variants. (<a href="http://www-formal.stanford.edu/jmc/">John McCarthy</a> calls this <a href="http://www-formal.stanford.edu/jmc/elaboration.html">Elaboration Tolerance</a>.)</li>
+  </ul>
+  <p>Solving one of these challenge problems should result in the discovery of new representational issues and problems that would not appear in an artificially small toy problem. If one encounters no difficulty along the way, one should be suspicious of the adequacy of the solution. Indeed, many of these problems are more difficult than they appear at first glance. <a href="http://cs.nyu.edu/cs/faculty/davise/">Ernest Davis</a>, who contributed many of these problems, has suggested that very few of these problems are currently solvable without considerable simplification. Two problems that he believes are solvable are <a href="#surprisebirthday">The Surprise Birthday Present</a> and the first half of <a href="#rabbits">Wolves and Rabbits</a>.</p>
+  <p>Note that the categorization below is approximate. Many problems could be placed in more than one category.</p>
+  <h5>Miscellaneous</h5>
+  <ul class="menu">
+    <li><a href="#evidence">Strength of Evidence</a></li>    <li><a href="#cuysp">The Cruel and Unusual Yale Shooting Problem</a></li>    <li><a href="#rabbits">Wolves and Rabbits</a></li>
+  </ul><h5>Naive Psychology</h5>
+  <ul class="menu">
+    <li><a href="#frogsandducks">Frogs and Ducks</a></li>    <li><a href="#samscalculus">Sam's Calculus</a></li>    <li><a href="#blackbeauty">Trusting the Horse</a></li>    <li><a href="#blackbeauty2">Trusting the Horse II
+</a></li>
+  </ul><h5>Physical Reasoning</h5>
+  <ul class="menu">
+    <li><a href="#cookiedough">Baking Cookies</a></li>    <li><a href="#eggcracking">Cracking an Egg</a></li>    <li><a href="#absolutezero">Estimating Absolute Zero</a></li>    <li><a href="#coolingwater">Failure of Common Sense: Cooling Water to Room Temperature</a></li>    <li><a href="#fallingobjects">Falling Objects</a></li>    <li><a href="#linkedchains">Linked Chains</a></li>    <li><a href="#rain">Singin' in the Rain</a></li>    <li><a href="#gardening">Stakes in a Garden</a></li>
+  </ul><h5>Planning</h5>
+  <ul class="menu">
+    <li><a href="#airmeal">Eating on an Airplane</a></li>    <li><a href="#opensafe">Opening a Safe</a></li>    <li><a href="#garbage">Remembering the Garbage</a></li>    <li><a href="#surprisebirthday">Surprise Birthday Present</a></li>    <li><a href="#couchpotato">The Soporific Effect of Conference Proceedings
+</a></li>    <li><a href="#wolfandbush">The Wolf and the Bush</a></li>
+  </ul><h5>Spatial Reasoning</h5>
+  <ul class="menu">
+    <li><a href="#handle">The Handle Problem</a></li>
+  </ul><h5>Understanding Language</h5>
+  <ul class="menu">
+    <li><a href="#nounphrases">The Meaning of Noun Phrases</a></li>
+  </ul>
+</div>
+<h2>Miscellaneous</h2>
+<div class="block">
+  <div class="article">
+    <a name="evidence"></a><h4>Strength of Evidence</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (19th September 1997)</p>
+<p>A says that he witnessed B murdering C.</p>
+<p>Infer that the evidence that B actually did murder C is stronger:</p>
+<ul>
+<li>if the murder was well lit than if it was in the dark</li>
+<li>if A already knew B than if he was a stranger</li>
+<li>if A was sober at the time of the murder than if he was drunk</li>
+<li>if A is known as a man of good character than if he has previously been convicted of perjury</li>
+<li>if A has no personal connection to B than if they  are enemies</li>
+<li>if A is testifying under oath than if he is talking casually</li>
+</ul>
+
+  </div>
+
+  <div class="article">
+    <a name="cuysp"></a><h4>The Cruel and Unusual Yale Shooting Problem</h4>
+    <p class="meta">Contributed by <a href="http://www.ihmc.us/groups/phayes/">Pat Hayes</a>, Institute for the Interdisciplinary Study of Human and Machine Cognition, University of West Florida, U.S.A. (2nd October 1997)</p>
+<p><a href= "http://cs-www.cs.yale.edu/homes/dvm/">Drew McDermott</a>
+hears about some dastardly deed. What conclusion should be drawn in each 
+of the following cases:</p>
+<ol>
+<li>A gun is loaded, then something else happens to it, then the gun is aimed at Fred (a turkey), and the trigger is pulled.</li>
+<li>A branding iron is heated red-hot, something else happens to it, then the iron is placed against some of Fred's feathers.</li>
+<li>A small earthenware crucible is filled with a volatile poison, then something else happens to it, then the cup (if it exists) is put to Fred's beak, and Fred swallows.</li>
+</ol>
+<p>The "something else" is one of the following list:</p>
+<ol>
+<li>being left undisturbed for five minutes</li>
+<li>being left undisturbed for five minutes at 1000 degrees Farenheit</li>
+<li>being left on a table in a public place for two years</li>
+<li>being locked in a safe for two years</li>
+<li>being dipped into a bucket of water, then removed and dried</li>
+<li>being placed in a 10-ton stamping mill</li>
+</ol>
+
+  </div>
+
+  <div class="article">
+    <a name="rabbits"></a><h4>Wolves and Rabbits</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (19th September 1997)</p>
+<p>Develop a theory justifying the following:</p>
+<p>If you put a half dozen rabbits in a pen and care for them suitably for a period of a few months, you will generally end up with more than a half dozen rabbits in the pen.  If, however, you fail to feed them, then you will end up with
+no (live) rabbits in the pen.  If they are all of one sex, and none of the rabbits is pregnant to start with, you will end up with no more than a half dozen rabbits no matter how long you wait.</p>
+<p>If you put a couple of wolves with a half dozen rabbits in a pen overnight, then in the morning, you will have two wolves and no rabbits.  If, however, the wolves are chained by a short chain at one end of the pen, you will probably have as many animals in the morning as you started with. A metal chain will work for this purpose;  a rope is not reliable.</p>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Naive Psychology</h2>
+<div class="block">
+  <div class="article">
+    <a name="frogsandducks"></a><h4>Frogs and Ducks</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (14th October 2012)
+</p>
+<p>Here's a challenge problem that I think would be worth working on. I think it's hard, I think it's doable, and I think it would be a significant advance.</p>
+
+<p>This is from a recent article "Scientific Thinking in Young Children: Theoretical Advance, Empirical Research, and Policy Implications," by Alison Gopnik, Science 337, 2012, 1623-1627.</p>
+
+<p>An experimenter took frogs from a box of all frogs or else took frogs from a box of almost all ducks. Then she left the room, and another experimenter gave the child [20 months] a small bowl of frogs and a separate bowl of ducks. When the original experimenter returned, she extended her hand ambiguously between the bowls. The children could give her either a frog or a duck. When she had taken frogs from a box of all frogs, children were equally likely to give her a frog or a duck. When she had taken frogs out of the box that was almost all ducks, children gave her a frog. In the first case, the children concluded that she had merely drawn a random sample from the box, but in the second case they concluded 
+that she had displayed a preference for frogs.</p>
+
+<p>Incidentally, I'm not endorsing the article as a whole, but the experiment 
+is certainly interesting.</p>
+  </div>
+
+  <div class="article">
+    <a name="samscalculus"></a><h4>Sam's Calculus</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)
+
+</p>
+<p>Sam got straight C's in high school math and has not thought for a moment about math in the 20 years since.  Infer that Sam is not the person to ask about a calculus problem.</p>
+<h5>A solution to Sam's Calculus Problem</h5>
+<ul>
+<li><a href="http://www.cs.utexas.edu/users/vl/papers/sam.ps">John Campbell and Vladimir Lifschitz: Reinforcing a claim in commonsense reasoning</a>, Common Sense 2003, Logical Formalizations of Commonsense Reasoning: Papers from 2003 AAAI Spring Symposium, 2003, pp. 51-56.</li>
+</ul>
+<p>Note that this solution focuses more on the issue of elaboration tolerance than the naive psychology aspects of the problem.</p>
+
+  </div>
+
+  <div class="article">
+    <a name="blackbeauty"></a><h4>Trusting the Horse</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)</p>
+<p>You are riding Black Beauty (a well-trained horse) in the dark, and you come to a bridge that he has often crossed before.  Black Beauty absolutely refuses to set foot on the bridge.  Infer that something may be wrong with the bridge.</p>
+
+  </div>
+
+  <div class="article">
+    <a name="blackbeauty2"></a><h4>Trusting the Horse II
+</h4>
+    <p class="meta">Contributed by <a href="http://www.ihmc.us/groups/phayes/">Pat Hayes</a>, Institute for the Interdisciplinary
+Study of Human and Machine Cognition, University of West Florida, U.S.A. (19th September 1997)</p>
+<p>As an addendum to <a href="#blackbeauty">Ernie Davis's 'Trusting the Horse'</a>  problem, here's a real incident from my own youth.  Black Beauty (in this version, a mare), while walking, develops a limp and is reluctant to step on her front leg, holding that hoof slightly above the ground.  Her driver, who claims to be an expert on horses, tries to force her to lift her front <b>right</b> leg, on the grounds that a horse placing too much weight on a hoof is often a sign of a problem in that hoof.</p>
+<p>Infer that the driver is a fool.</p>
+
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Physical Reasoning</h2>
+<div class="block">
+  <div class="article">
+    <a name="cookiedough"></a><h4>Baking Cookies</h4>
+    <p class="meta">Contributed by <a href="http://www-formal.stanford.edu/leora"> Leora Morgenstern</a>, IBM T.J. Watson Research Center, U.S.A. and <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)
+</p>
+<p>When baking cookies, after you prepare the cookie dough, you lightly spread flour over a large flat surface; then roll out the dough on the surface with a rolling pin; then cut out cookie shapes with a cookie cutter; then put the separated cookies separately onto a cookie sheet and bake.</p>
+<h5>Variants:</h5>
+<p>What happens if:  You do not flour the surface?  You use too much flour?  You do not roll out the dough, but cut the cookies from the original mass?  You roll out the dough but don't cut it?  You cut the dough but don't separate the pieces?</p>
+<p>What happens if the surface is covered with sand?  Or covered with sandpaper?  If the rolling pin has bumps?  or cavities?  or is square? If the cookie cutter does not fit within the dough?  What happens if you use the rolling pin just in the middle of the dough and leave the edges alone?  If, rather than roll, you pick up the rolling pin and press it down into the dough in various spots?  Ordinarily the cutting part of the cookie cutter is a thin vertical wall above a simple closed curve in the plane;  suppose it is not thin?  or not vertical?  or not closed? or a multiple curve?  If the cuts with the cutter overlap one another?</p>
+<p>Does the dough end up thinner or thicker if you exert more force on the rolling pin?  If you roll it out more times?  If you roll the pin faster or slower?  Do you get more or fewer cookies if the dough is rolled thinner?  If a larger cookie cutter is used?  If there is more dough?  If the cuts with the cutter are spread further apart?</p>
+<p> What is the point of placing waxed paper on the surface? What happens if the above procedure is tried with a recipe for drop cookies?  bar cookies?  refrigerator cookies?</p>
+  </div>
+
+  <div class="article">
+    <a name="eggcracking"></a><h4>Cracking an Egg</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)</p>
+<p>Characterize the following:</p>
+<p>A cook is cracking a raw egg against a glass bowl.  Properly performed, the impact of the egg against the edge of the bowl will crack the eggshell in half.  Holding the egg over the bowl, the cook will then separate the two halves of the shell with his fingers, enlarging the crack, and the contents of the egg will fall gently into the bowl.  The end  result is that the entire contents of the egg will be in the bowl, with the yolk unbroken, and that the two halves of the shell are held in the cook's fingers.</p>
+<h5>Variants:</h5>
+<p>What happens if:  The cook brings the egg to impact very quickly? Very slowly?  The cook lays the egg in the bowl and exerts steady pressure with his hand?  The cook, having cracked the egg, attempts to peel it off its contents like a hard-boiled egg?  The bowl is made of loose-leaf paper?  of soft clay?  The bowl is smaller than the egg?  The bowl is
+upside down?  The cook tries this procedure with a hard-boiled egg? With a coconut?  With an M &amp; M? </p>
+<h5>Three solutions to the Egg-Cracking Problem:</h5>
+<ul>
+<li><a href="http://www.cs.utexas.edu/users/vl/mypapers/egg.ps">Vladimir Lifschitz: Cracking an Egg: An Exercise
+in Commonsense Reasoning</a>, 4th January 1998. Presented at Common Sense 1998.</li>
+<li><a href="http://www-formal.stanford.edu/leora/egg-studialogica.ps">Leora Morgenstern: 
+Mid-Sized Axiomatizations of Commonsense Problems: A Case Study in Egg Cracking</a>, 
+<i>Studia Logica</i>, 67(3):333-384, 2001. Extended version of paper presented at Common Sense 1998.</li>
+<li><a href="http://www-formal.stanford.edu/leora/shanahan-aij-egg.ps">Murray Shanahan: An Attempt 
+to Formalise a Non-Trivial Benchmark Problem in Common Sense Reasoning</a>, 
+<i> Artificial Intelligence</i>, 153(1-2):141-165, 2001 (Special Issue on Logical Formalizations of Commonsense
+Reasoning). Extended version of paper presented at Common Sense 1998.</li>
+</ul>
+
+  </div>
+
+  <div class="article">
+    <a name="absolutezero"></a><h4>Estimating Absolute Zero</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)</p>
+<p>Characterize the following:</p>
+<p>The following experiment can be used to estimate absolute zero using household objects.  Prepare a pot of boiling water and a pot of ice water.  Take a graduated baby bottle and hold it (using tongs) in the boiling water.  After a few minutes, when it has stopped bubbling, remove it and plunge it rapidly into the ice water.  Water will then stream into the baby bottle through the nipple, as the gas contracts.  (Actually, the nipple collapses:  to allow the flow of water, you have to manipulate the nipple.)  When the flow of water stops, the volume of the water that has entered the bottle may be measured by holding the bottle right-side up;  the final volume of the gas at 0 degrees C may be measured by holding the bottle upside down.  The initial volume of the gas at 100 degrees C is the sum of the final volume of the gas plus the volume of the water.  By doing a linear extrapolation between these two values to the point where the volume of the gas would be zero, one can find the value of absolute zero.</p>
+<h5>Variants:</h5>
+<p>What would happen:  If the bottle is immersed only very briefly in the hot water?  Or only very briefly in the cold water?  If it is laid on top of the pots of water rather than immersed in them?  If the bottle is left in the outside air a long time between being in the hot water and being in the ice water?  If the bottle has an open end with no nipple? If the bottle has other holes besides this nipple?  If the bottle is opaque? If you use containers with air at 100 degrees and 0 degrees rather than water?  If the quantity of ice water in the second pot is very small? very large?  or if the quantity of hot water in the first pot is very small or very large?  If the bottle is coated with Styrofoam?  If the bottle is not graduated?  Why is the following not a reasonable experiment: "Take a volume of gas in your hands;  cool it; see how much it shrinks."</p>
+
+  </div>
+
+  <div class="article">
+    <a name="coolingwater"></a><h4>Failure of Common Sense: Cooling Water to Room Temperature</h4>
+    <p class="meta">Contributed by <a href="http://www.ihmc.us/groups/phayes/">Pat Hayes</a>, Institute for the Interdisciplinary Study of Human and Machine Cognition, University of West Florida, U.S.A. (19th September 1997)
+</p>
+<p>In connection with <a href="#absolutezero">Ernie Davis's 'Absolute Zero'</a> problem, here's an experiment with a very counter-intuitive outcome. The apparatus is two containers, with one fitting loosely into the other. Hot water is placed into the inner one, and iced water into the outer one, forming a cooling jacket.  The experiment measures how long it takes for the water in the inner container to cool to room temperature.  If the initial temperature of the hot (inner) water is very high, it cools to room temperature in less time than if its initial temperature is lower.</p>
+<p>Why is this surprising?  More difficult, and maybe outside 'common sense,' what explanation could be given for it?</p>
+
+
+  </div>
+
+  <div class="article">
+    <a name="fallingobjects"></a><h4>Falling Objects</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)
+</p>
+<p>Consider dropping the following objects on the floor from a height of five feet:</p>
+<ol>
+<li>a chalk eraser;</li>
+<li>a raw egg;</li>
+<li>fine glassware;</li>
+<li>a lump of clay;</li>
+<li>a feather;</li>
+<li>a flat piece of paper;</li>
+<li>a crumpled piece of paper.</li>
+</ol>
+<p>Develop a theory that connects the final state of these being dropped and their behavior while falling to their other material properties.</p>
+
+  </div>
+
+  <div class="article">
+    <a name="linkedchains"></a><h4>Linked Chains</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)</p>
+<p>Formally characterize the structure of a linked chain, and infer (a) that pulling on one end will cause the whole chain
+to follow; (b) that the chain is very flexible;  (c) that cutting one link will give two shorter chains and that linking two chains together end to end gives a longer chain.</p>
+
+  </div>
+
+  <div class="article">
+    <a name="rain"></a><h4>Singin' in the Rain</h4>
+    <p class="meta">Contributed by <a href="http://www.ihmc.us/groups/phayes/">Pat Hayes</a>, Institute for the Interdisciplinary Study of Human and Machine Cognition, University of West Florida, U.S.A. (13th November 1997)
+
+</p>
+<p>It is necessary to walk several hundred yards in rain. Explain why if the rain is moderate then one should run, but not if one has an umbrella; but if the rain is very heavy then running is of no use unless one has an umbrella, and even then it is best to hurry; and if there is also a strong wind one is likely to get more wet than if not, even with an umbrella.</p>
+  </div>
+
+  <div class="article">
+    <a name="gardening"></a><h4>Stakes in a Garden</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)</p>
+<p>Characterize the following physical operation:</p>
+<p>A gardener who has valuable plants with long delicate stems protects them against the wind by staking them;  that is, by plunging a stake into the ground near them and attaching the plants to the stake with string.</p>
+<h5>Variants:</h5>
+<p>What would happen:  If the stake is only placed upright on the ground, not stuck into the ground?  If the string were attached only to the plant, not to the stake?  To the stake, but not to the plant? If the plant is growing out of rock?  Or in water?  If, instead of string, you use a rubber band?  Or a wire twist-tie?  Or a light chain?  Or a metal ring? Or a cobweb?  If instead of tying the ends of the string, you twist them together?  Or glue them?  Or place them side by side?  If you use a large rock rather than a stake?  If the string is very much longer, or very much shorter,
+than the distance from the stake to the plant?  If the distance from the stake to the plant is large as compared to the height of the plant? If the stake is also made out of string?  Trees are sometimes blown over in heavy storms; can they be staked against this?</p>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Planning</h2>
+<div class="block">
+  <div class="article">
+    <a name="airmeal"></a><h4>Eating on an Airplane</h4>
+    <p class="meta">Contributed by <a href="http://www.dcs.qmw.ac.uk/%7Ejb/">John Bell</a>, Queen Mary and Westfield College, London, U.K. (9th June, 1998)
+</p>
+<p>A humanoid robot is flying economy class on a major airline and is required to "eat" the packaged meal that has been served to it.  Like its fellow human travelers, the robot can be assumed to be in a standard seat and to have two arms which function similarly to theirs, with similar restrictions on mobility; e.g. because of the cramped conditions, the robot's elbows have to remain close to its chest.  In front of the robot is the familiar small table, occupied almost entirely by the tray containing the meal, neatly packaged in little plastic containers with transparent lids, along with a small plastic cup containing a foil-sealed tub of water, and a cellophane envelope containing a set of plastic cutlery, napkin, condiments, etc.  For simplicity, assume that eating can be taken to consist of manipulating the food and drink to the robot's mouth, where the utensils are emptied at typical human diner rate.  The robot is conventional in eating habits; thus, it tries at all times to not spill, to use the appropriate utensils, and to obey conventions as to when it is permissible to eat with its fingers (chicken, no; asparagus, yes). Moreover, it begins its meal with the starter, follows this with the main course (along with the mini roll which it has spread with butter), then it has dessert, and finally the cheese and biscuits.  To complicate matters, the robot drinks water at various stages of the meal.  Everything must be kept on the tray or table, including the packaging for the plastic cutler, the tops of containers, and the containers and their contents. So, like its human companions, the robot quickly becomes involved in an elaborate Chess game, continually maneuvering  the containers so that the chosen one is in position.</p>
+<p>The problem is to formalize some aspect of this problem: e.g. the problem of food manipulation, or of planning how to eat the next part of the meal. (For example, consider the situation if the only way to tear through the plastic wrapping is with a sharp object such as a key, and the robot's keys are either in the  back pocket of its trousers, or in its purse on the floor.) Initially this might be done at a fairly abstract level.  However, the eventual aim is an epistemologically adequate formalization.   Toward this end, formalizing the robot's mental life is interesting.  For example, the robot's beliefs, desires, and preferences might lead it to try to eat the portion of processed cheese,
+and this goal might persist until the robot realizes that it cannot open the cheese, or assuming that it manages to do so, until it decides that the cheese tastes worse than it looks.  Those interested in multi-agent systems might care to formalize the arrival of coffee, served by a member of the cabin crew, usually a small tray held over the
+no-man's land of the adjacent seat, where the robot helps itself to milk and sugar.</p>
+  </div>
+
+  <div class="article">
+    <a name="opensafe"></a><h4>Opening a Safe</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (18th September 1997)</p>
+<p>The combination of a safe consists of 3 numbers between 1 and 50, with a tolerance of plus/minus two.  No one knows what the combination is. Infer (a) that it will not be possible to open the safe using the combination within 5 minutes (unless you are very lucky); (b) that it will be possible in a couple of days work.</p>
+
+  </div>
+
+  <div class="article">
+    <a name="garbage"></a><h4>Remembering the Garbage</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (19th September 1997)</p>
+<p>It is morning and you recall that you have to take out the garbage tonight.  You are afraid that tonight it will slip your mind. Infer that you would do well to write a memo reminding yourself and attach it in some place where you are sure to look tonight.</p>
+
+  </div>
+
+  <div class="article">
+    <a name="surprisebirthday"></a><h4>Surprise Birthday Present</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (29th May 2001)</p>
+    <p>Alice and Bob want to surprise their sister Carol with a joint present for her birthday, two weeks from now.  They therefore go into a closed room to decide on the present and to plan how they will buy it.</p>
+    <h5>Variants:</h5>
+    <p>The plan will not work:</p>
+    <ul>
+      <li>If Carol is also in the room.</li>
+      <li>If the door is open and Carol is in the next room.</li>
+      <li>If one of them tells Carol.</li>
+      <li>If they do not consult together.</li>
+      <li>If they can't agree on a present.</li>
+      <li>If they wait until after Carol's birthday.</li>
+      <li>It will probably not work if Carol sees that they have the present before they give it to her.</li>
+      <li>On the other hand, it probably will work if Carol sees the present in the store.</li>
+      <li>The plan will work if, instead,
+        <ul>
+          <li>They discuss the plan during a walk outside.</li>
+          <li>They pass a hidden written message.</li>
+          <li>They go together to buy the present, or one of them goes singly to buy the present.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>Non-prediction problems:</p>
+    <ul>
+      <li>If Carol is not surprised, infer that she somehow got wind of their plan.</li>
+      <li>If the plan is executed, and we know that Alice has not spent any money, then infer that Bob bought the present and that Alice owes him for her share.</li>
+      <li>If Alice and Bob present Carol with present P on her birthday, infer that P is the present they decided on.</li>
+    </ul>
+    <p>The following constraints must be satisfied by the solution:</p>
+    <ul>
+      <li>The events enumerated in this plan are not the only events that will transpire in the next two weeks, or even the only actions of Alice and Bob in the next two weeks. Therefore, it will be considered a weakness in a theory if it supports, either monotonically or non-monotonically, the inference that nothing else happens.</li>
+      <li>Similarly, Carol knows lots of stuff; she just doesn't know about the present.  It will be considered a weakness in a theory if it supports the inference that Carol knows nothing at all (or, more precisely, that she knows nothing except truths that hold in all possible worlds).</li>
+    </ul>
+    <p>Note that the problem involves a variety of domains:  time, a little space and physics, knowledge, perception, naive psychology, multi-agents.</p>
+
+  </div>
+
+  <div class="article">
+    <a name="couchpotato"></a><h4>The Soporific Effect of Conference Proceedings
+</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (19th September 1997)
+</p>
+<p>It is 9:00 PM, you are very tired, and you are settling down in a comfortable armchair with a book of conference proceedings.  You are supposed to call your mother at 9:30.  Infer that you would do well to set the alarm on your watch for 9:25. </p>
+  </div>
+
+  <div class="article">
+    <a name="wolfandbush"></a><h4>The Wolf and the Bush</h4>
+    <p class="meta">Contributed by <a href="http://www.ihmc.us/groups/phayes/">Pat Hayes</a>, Institute for the Interdisciplinary
+Study of Human and Machine Cognition, University of West Florida, U.S.A. and <a href="http://www.icsi.berkeley.edu/~shastri/">Lokendra Shastri</a>, International Computer Science Institute, Berkeley, California, U.S.A. (9th July, 1997)</p>
+<p>(A less violent version of Little Red Riding Hood)</p>
+<p>A small girl is walking through a forest to visit her grandmother, and  she passes a bush behind which a Wolf is hiding, planning to pounce out and eat her.  Just as she gets close, however, the Wolf hears the singing of the woodcutters as they start work nearby. The Wolf therefore decides to stay hidden and not pounce on the little girl after all.  The problem is to explain why the Wolf decides to stay behind the bush.</p>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Spatial Reasoning</h2>
+<div class="block">
+  <div class="article">
+    <a name="handle"></a><h4>The Handle Problem</h4>
+    <p class="meta">Contributed by <a href="http://www.ihmc.us/groups/phayes/">Pat Hayes</a>, Institute for the Interdisciplinary Study of Human and Machine Cognition, University of West Florida, U.S.A. (2nd October 1997)
+
+</p>
+<p>Give a general purpose characterization of what constitutes a handle, in the ordinary sense of door-handle or drawer-handle, which is sufficient to enable one to infer from a qualitative description of the shape of a part of an object whether or not it can be a handle for that object. In particular, it should be possible to infer that a blunt conical
+projection cannot be a handle, but an inverted conical projection can be; that a simple rectangular projection can be a drawer handle, but not a suitable handle for lifting a heavy object;  that a piece of rope attached at one end can be a door handle; and that a hooked or u-shaped projection, or a rope fastened at both ends, can be a handle for almost anything.</p>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Understanding Language</h2>
+<div class="block">
+  <div class="article">
+    <a name="nounphrases"></a><h4>The Meaning of Noun Phrases</h4>
+    <p class="meta">Contributed by <a href="http://www.cs.nyu.edu/cs/faculty/davise/index.html">Ernie Davis</a>, New York University, U.S.A. (19th September 1997)</p>
+<p>There are many ways in which the meaning of a two word noun phrase can be related to the meanings of the individual nouns, and syntax gives little indication of which applies in any given case.  Some such phrases are purely idiomatic and must be individually learned (e.g. "tag sale," "mustard gas") but in most cases a speaker who has never seen the particular phrase can figure out its meaning from semantic constraints and commonsense knowledge.</p>
+<p>Characterize the commonsense knowledge used in determining that the correct meaning of the following noun phrases is more plausible than any of the alternative readings:</p>
+<ul>
+<li>water bird (a bird who lives near the water)</li>
+<li>marble cake (a cake that looks like marble)</li>
+<li>soda can (a can containing soda)</li>
+<li>rock candy (candy as hard as a rock)</li>
+<li>bank card (a card issued by a bank)</li>
+<li>credit card (a card used for purchases on credit)</li>
+<li>kitchen clock (a clock hung in the kitchen)</li>
+<li>pocket computer (a computer that fits in the pocket)</li>
+<li>ballet dancer (one who dances ballet)</li>
+<li>toy dog (a small dog) or (a toy shaped like a dog)</li>
+<li>doy toy (a toy played with by a dog)</li>
+<li>research group (a group that does research)</li>
+<li>clover honey (honey made by bees who feed on clover)</li>
+<li>bike messenger (a messenger who rides a bike)</li>
+<li>cargo plane (a plane used for carrying cargo)</li>
+<li>jet plane (a plane powered by jets)</li>
+<li>birthday present (present given to celebrate a birthday)</li>
+<li>C program (a program written in C)</li>
+<li>opera program (a program describing an opera)</li>
+<li>computer program (a program that runs on a computer)</li>
+<li>diet program (a program guiding a diet)</li>
+<li>television program (a program shown on television)</li>
+<li>engagement ring (a ring symbolic of an engagement)</li>
+<li>nose ring (a ring worn in the nose)</li>
+<li>sea salt (salt extracted from the sea)</li>
+<li>power saw (a saw with electric power)</li>
+<li>art school (a school that teaches art)</li>
+<li>ice skater (one who skates on ice)</li>
+<li>college student (a student attending college)</li>
+<li>exchange student (a student who is part of an exchange program)</li>
+<li>peach tree (a tree that bears peaches)</li>
+<li>oak tree (an oak: An oak is a type of tree)</li>
+<li>crystal vase (a vase made of crystal)</li>
+<li>computer vision (vision by a computer)</li>
+<li>ocean water (water from the ocean)</li>
+</ul>
+
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_12" id="site_info">
+				<div class="box">
+					<p>For questions or comments about commonsensereasoning.org please email <a href="mailto:leora@cs.nyu.edu">leora@cs.nyu.edu</a>.</p>
+                    <p>Website design by <a href="http://www.benjaminjohnston.com.au/">Benjamin Johnston</a>, based on the <a href="http://www.designinfluences.com/fluid960gs/">Fluid 960 Grid System</a> by <a href="http://www.domain7.com/WhoWeAre/StephenBau.html">Stephen Bau</a> and <a href="http://sonspring.com/journal/960-grid-system">Nathan Smith</a>. Crowd photo by <a href="http://james.cridland.net/">James Cridland</a>.</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery-fluid16.js"></script>
+	</body>
+</html>

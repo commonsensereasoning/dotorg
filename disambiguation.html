@@ -1,0 +1,665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="-1" />
+		<meta http-equiv="Cache-Control" content="no-store" />
+		<title>Commonsense Reasoning</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/text.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/960.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" media="screen" />
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+	</head>
+	<body>
+		<div class="container_12">
+			<div class="grid_12">
+            	<img src="img/banner.jpg" alt="Commonsense Reasoning" />
+			</div>
+			<div class="clear"></div>
+			<div class="grid_12">
+				<h2 id="page-heading">Commonsense Reasoning ~ Pronoun Disambiguation Problems</h2>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_3">
+				<div class="box menu">
+					<div class="block">
+						<ul class="section menu" id="section-menu">
+                        	                        	<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="organization.html">Organization</a>
+							</li>
+							<li>
+								<a href="problem_page.html">Problem Page</a>
+							</li>
+              <li>
+                <a href="winograd.html">Winograd Schema Challenge</a>
+              </li>
+              <li>
+                <a class="current_item" href="disambiguation.html">Pronoun Disambiguation Problems</a>
+              </li>
+
+              <li>
+                <!--
+                <a href="2015/index.html">Commonsense 2015</a>
+                -->
+								<a class="menuitem">Commonsense 2015</a>
+								<ul class="submenu">
+									<li>
+										<a href="2015/index.html">Information</a>
+									</li>
+									<li>
+										<a href="2015/cfp.html">Call for Papers</a>
+									</li>
+									<li>
+										<a href="2015/committee.html">Committee</a>
+									</li>
+                  <li>
+                    <a href="2015/logistics.html">Author Information</a>
+                  </li>
+									<li>
+										<a href="2015/proceedings.html">Proceedings</a>
+									</li>
+									<li>
+										<a href="2015/schedule.html">Schedule</a>
+									</li>
+									<li>
+										<a href="2015/participants.html">Participants</a>
+									</li>
+								</ul>
+                
+                       
+							</li>
+							<li>
+								<a class="menuitem">Past Symposia</a>
+								<ul class="submenu">
+                  <li>
+                    <a href="2013/index.html">2013 (Cyprus)</a>
+                  </li>
+                  <li>
+                    <a href="2011/index.html">2011 (Stanford)</a>
+                  </li>
+                  <li>
+										<a href="2009/index.html">2009 (Toronto)</a>
+									</li>
+									<li>
+										<a href="2007/index.html">2007 (Stanford)</a>
+									</li>
+									<li>
+										<a href="2005/index.html">2005 (Corfu)</a>
+									</li>
+									<li>
+										<a href="2003/index.html">2003 (Stanford)</a>
+									</li>
+									<li>
+										<a href="2001/index.html">2001 (New York)</a>
+									</li>
+									<li>
+										<a href="1998/index.html">1998 (London)</a>
+									</li>
+								</ul>
+							</li>
+                            <li>
+								<a href="contacts.html">Contact Us</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="grid_9">
+				<div class="box">
+					<h2>Pronoun Disambiguation Problems</h2>
+<div class="block">
+<font size +2>
+  <p>Following are two lists: one of sample Pronoun Disambiguation Problems (PDPs), and a list of the challenge PDPs used in the First Winograd Schema Challenge held at IJCAI 2016 . </p> 
+
+<p>The passages are taken or modified from existing published works. The sample problems are taken from Carolyn Keene: <i>Nancy Drew: The Quest of the Missing Map</i>, Grosset & Dunlap, 1969, 1942; Jean de Brunhoff: <i>The Story of Babar</i>,  Random House, 1933; and  Anna Sewell: <i>Black Beauty</i>, J. M. Lupton, 1877. Sentences in WSC-2016 were taken from Laura Ingalls Wilder <i>Little Town on the Prarie</i>, P.G. Woodhouse: <i>Carry on, Jeeves </i>, Sidney Taylor: <i>All of a Kind Family</i>, Esther Forbes: <i>Johnny Tremaine</i>, Ruth Sawyer: <i>The Year of Jubilo</i>, and several other sources.
+
+<p>
+Sentences have been modified to summarize context and backstory, which are often given over several paragraphs, into a single sentence (PDP 33); to clarify or simplify (PDP 22); or to change gender or number of nouns and pronouns in order to introduce ambiguity (PDP 2). For challenge problems, character names were also changed. Note that a single passage may give rise to multiple Pronoun Disambiguation Problems.
+
+<h3> Sample Pronoun Disambiguation Problems</h3>
+<p>
+ The pronoun to be disambiguated is highlighted in bold. It is repeated again, with a snippet of context, and with several candidate answers, in the line following the passage. The correct answer is given in the next line.</p>
+
+
+
+<p>
+<ol>
+<li>
+While Nancy and Ellen counted the silverware, Mrs. Smith hastened upstairs. In a few minutes she returned and one look at <b>her</b> stricken face told the girls that the precious map was gone.
+<br>
+"<b>her</b> stricken face": a) Nancy (b) Ellen (c) Mrs. Smith
+<br>
+Answer: (c) Mrs. Smith
+</li>
+
+<li>
+Sergeant Holmes asked the girls to describe the intruder. Nancy not only provided the policeman with an excellent description of the heavyset thirty-year-old prowler, but drew a rough sketch of <b>his</b> face.
+<br>
+"rough sketch of <b>his</b> face": (a) Sergeant Holmes (b) the intruder
+<br>
+Answer: (b) the intruder
+</li>
+
+<li>
+After a somewhat lengthy conversation, Nancy convinced the housekeeper that there was no immediate cause for alarm. <b>She</b> did not mention the incident at the Hamilton bus station, knowing it would only add to Mrs. Gruen’s uneasiness. 
+<br>
+"<b>She</b> did not mention": (a) Nancy (b) the housekeeper
+<br>
+Answer: (a) Nancy
+</li>
+
+<li>
+ I asked Dave to get me my sweater from the other side of the yacht.  While he was gone, I rested my arm on the rail over there and suddenly <b>it </b> gave way.
+<br>
+"<b>it </b> gave way": (a) sweater (b) yacht (c) arm (d) rail
+<br>
+Answer: (d) rail
+</li>
+
+<li>
+Do you suppose that Peter is responsible for the captain’s illness? Maybe <b>he</b> bribed the cook to put something in his food.
+<br>
+"<b>he</b> bribed the cook": (a) Peter (b) the captain
+<br>
+Answer: (a) Peter
+</li>
+
+<li>
+Do you suppose that Peter is responsible for the captain’s illness? Maybe he bribed the cook to put something in <b>his</b> food.
+<br>
+"<b>his</b> food": (a) Peter (b) the captain (c) the cook
+<br>
+Answer: (b) the captain
+</li>
+
+<li>
+Babar wonders how he can get new clothing.  Luckily,  a very rich old man who has always been fond of little elephants understands right away that <b>he</b> is longing for a fine suit. As he likes to make people happy, he gives him his wallet.
+<br>
+"<b>he</b> is longing for a fine suit": (a) Babar (b) old man
+<br>
+Answer: (a) Babar
+</li>
+
+<li>
+Babar wonders how he can get new clothing.  Luckily,  a very rich old man who has always been fond of little elephants understands right away that he is longing for a fine suit. As <b>he</b> likes to make people happy, he gives him his wallet.
+<br>
+"<b>he</b> likes to make people happy": (a) Babar (b) old man
+<br>
+Answer: (b) old man
+</li>
+
+<li>
+Babar wonders how he can get new clothing.  Luckily,  a very rich old man who has always been fond of little elephants understands right away that he is longing for a fine suit. As he likes to make people happy, <b>he</b> gives him his wallet.
+<br>
+"<b>he</b> gives": (a) Babar (b) old man
+</li>
+
+<li>
+Babar wonders how he can get new clothing.  Luckily,  a very rich old man who has always been fond of little elephants understands right away that he is longing for a fine suit. As he likes to make people happy, he gives <b>him</b> his wallet.
+<br>
+"gives <b>him</b>": (a) Babar (b) old man
+<br>
+Answer: (a) Babar
+</li>
+
+<li>
+Babar wonders how he can get new clothing.  Luckily,  a very rich old man who has always been fond of little elephants understands right away that he is longing for a fine suit. As he likes to make people happy, he gives him <b>his</b> wallet.
+<br>
+"<b>his</b> wallet": (a) Babar (b) old man
+<br>
+Answer: (b) old man
+</li>
+
+<li>
+Well satisfied with his purchases and feeling very elegant indeed, Babar goes to the photographer to have <b>his</b> picture taken.
+<br>
+"<b>his</b> picture": (a) Babar (b) the photographer
+<br>
+Answer: (a) Babar
+</li>
+
+<li>
+Meanwhile, in the forest, the elephants are calling and hunting high and low for Arthur and Celeste, and <b>their</b> mothers are very worried. Fortunately, in flying over the town, an old marabou bird has seen them and come back quickly to tell the news.
+<br>
+"<b>their</b> mothers": (a) the elephants (b) Arthur and Celeste
+<br>
+Answer: (b) Arthur and Celeste
+</li>
+
+<li>
+Meanwhile, in the forest, the elephants are calling and hunting high and low for Arthur and Celeste, and their mothers are very worried. Fortunately, in flying over the town, an old marabou bird has seen <b>them</b> and come back quickly to tell the news.
+<br>
+"has seen <b>them</b>": (a) the elephants (b) Arthur and Celeste (c) their mothers
+<br>
+Answer: (b) Arthur and Celeste
+</li>
+
+<li>
+The mothers of Arthur and Celeste have come to the town to fetch <b>them</b>. They are very happy to have them back, but they scold them just the same because they ran away.
+<br>
+"fetch <b>them</b>": (a) mothers (b) Arthur and Celeste
+<br>
+Answer: (b) Arthur and Celeste
+</li>
+
+<li>
+The mothers of Arthur and Celeste have come to the town to fetch them. <b>They</b> are very happy to have them back, but they scold them just the same because they ran away.
+<br>
+"<b>They</b> are very happy": (a) mothers (b) Arthur and Celeste
+<br>
+Answer: (a) mothers
+</li>
+
+<li>
+The mothers of Arthur and Celeste have come to the town to fetch them. They are very happy to have <b>them</b> back, but they scold them just the same because they ran away.
+<br>
+"have <b>them</b> back": (a) mothers (b) Arthur and Celeste
+<br>
+Answer: (b) Arthur and Celeste
+</li>
+
+<li>
+The mothers of Arthur and Celeste have come to the town to fetch them. They are very happy to have them back, but <b>they</b> scold them just the same because they ran away.
+<br>
+"<b>they</b> scold": (a) mothers (b) Arthur and Celeste
+<br>
+Answer: (a) mothers
+</li>
+
+<li>
+The mothers of Arthur and Celeste have come to the town to fetch them. They are very happy to have them back, but they scold <b>them</b> just the same because they ran away.
+<br>
+"scold <b>them</b>": (a) mothers (b) Arthur and Celeste
+<br>
+Answer: (b) Arthur and Celeste
+</li>
+
+<li>
+The mothers of Arthur and Celeste have come to the town to fetch them. They are very happy to have them back, but they scold them just the same because <b>they</b> ran away.
+<br>
+"<b>they</b> ran away": (a) mothers (b) Arthur and Celeste
+<br>
+Answer: (b) Arthur and Celeste
+</li>
+
+<li>
+The first place that I can well remember was a large pleasant meadow with a pond of clear water in it. Some shady trees leaned over <b>it</b>, and rushes and water-lilies grew at the deep end. 
+<br>
+"leaned over <b>it</b>": (a) meadow (b) pond
+<br>
+Answer: (b) pond
+</li>
+
+<li>
+One day Dick was teasing the colts, and did not know that the master was in the next field; but <b>he</b> was there, watching what was going on; over the hedge he jumped in a snap, and catching Dick by the arm, he hit him so hard that he roared with the pain and surprise.
+<br>
+"<b>he</b> was there": (a) Dick (b) the master
+<br>
+Answer: (b) the master
+</li>
+
+<li>
+One day Dick was teasing the colts, and did not know that the master was in the next field; but he was there, watching what was going on; over the hedge <b>he</b> jumped in a snap, and catching Dick by the arm, he  hit him so hard that he roared  with the pain and surprise.
+<br>
+"<b>he</b> jumped ": (a) Dick (b) the master
+<br>
+Answer: (b) the master
+</li>
+
+<li>
+One day Dick was teasing the colts, and did not know that the master was in the next field; but he was there, watching what was going on; over the hedge he jumped in a snap, and catching Dick by the arm, <b>he</b>  hit him so hard that he roared  with the pain and surprise.
+<br>
+"<b>he</b> gave": (a) Dick (b) the master
+<br>
+Answer: (b) the master
+</li>
+
+<li>
+One day Dick was teasing the colts, and did not know that the master was in the next field; but he was there, watching what was going on; over the hedge he jumped in a snap, and catching Dick by the arm, he hit  <b>him</b> so hard that he roared with the pain and surprise.
+<br>
+"hit <b>him</b> so hard": (a) Dick (b) the master
+<br>
+Answer: (a) Dick
+</li>
+
+<li>
+One day Dick was teasing the colts, and did not know that the master was in the next field; but he was there, watching what was going on; over the hedge he jumped in a snap, and catching Dick by the arm, he hit him so hard that 
+<b>he</b> roared with the pain and surprise.
+<br>
+"that <b>he</b> roared": (a) Dick (b) the master
+<br>
+Answer: (a) Dick
+</li>
+
+<li>
+When Mr. Bond, the veterinarian, came to look at the black horse that lay groaning on the grass, <b>he</b> felt him all over, and shook his head; one of his legs was broken.
+<br>
+"<b>he</b> felt": (a) Mr. Bond (b) the black horse
+<br>
+Answer: (a) Mr. Bond
+</li>
+
+<li>
+When Mr. Bond, the veterinarian, came to look at the black horse that lay groaning on the grass, he felt <b>him</b> all over, and shook his head; one of his legs was broken.
+<br>
+"felt <b>him</b> all over": (a) Mr. Bond (b) the black horse
+<br>
+Answer: (b) the black horse
+</li>
+
+<li>
+When Mr. Bond, the veterinarian, came to look at the black horse that lay groaning on the grass, he felt him all over, and shook <b>his</b> head; one of his legs was broken.
+<br>
+"shook <b>his</b> head": (a) Mr. Bond (b) the black horse
+<br>
+Answer: (a) Mr. Bond
+</li>
+
+<li>
+When Mr. Bond, the veterinarian, came to look at the black horse that lay groaning on the grass, he felt him all over, and shook his head; one of <b>his</b> legs was broken.
+<br>
+"one of <b>his</b> legs was broken": (a) Mr. Bond (b) the black horse
+<br>
+Answer: (b) the black horse
+</li>
+
+<li>
+Then he took a piece of iron the shape of the horse's foot, and clapped <b>it</b> on, and drove some nails through the shoe quite into its hoof, so that the shoe was firmly on
+<br>
+"clapped <b>it</b> on": (a) piece of iron (b) shape (c) horse (d) horse's foot
+<br>
+Answer: (a) piece of iron
+</li>
+
+<li>
+The stable was very roomy, with four good stalls; a large swinging window opened into the yard, which made <b>it</b> pleasant and airy.
+<br>
+"made <b>it</b> pleasant": (a) stable (b) window (c) yard
+<br>
+Answer: (a) stable
+</li>
+
+
+<li>
+We saw a boy trying to leap a pony over a gate; the pony would not take the leap, and the boy cut him with the whip, but <b>he</b> only turned to  one side.
+<br>
+"<b>he</b> only turned to one side": (a) boy (b) pony
+<br>
+Answer: (b) pony
+</li>
+
+<li>
+The boy continued to whip the pony, and eventually the pony threw him over. John laughed out quite loud. "Served <b>him</b> right," he said.
+<br>
+"Served <b>him</b> right": (a) boy (b) pony (c) John
+<br>
+Answer: (a) boy
+</li>
+
+<li>
+The boy continued to whip the pony, and eventually the pony threw him over. John laughed out quite loud. "Good for <b>him</b>," he said.
+<br>
+"Good for  <b>him</b>": (a) boy (b) pony (c) John
+<br>
+Answer: (b) pony
+</li>
+
+<li>
+The pony behaved well, sir, and showed no vice; but at last he just threw up his heels and tipped the young gentleman into the thorn hedge. <b>He</b> wanted me to help him out, but I hope you will excuse me, sir, I did not feel inclined to do so.
+<br>
+"<b>He</b> wanted me": (a) pony (b) young gentleman
+<br>
+Answer: (b) young gentleman
+</li>
+
+<li>
+The pony behaved well, sir, and showed no vice; but at last he just threw up his heels and tipped the young gentleman into the thorn hedge. He wanted me to help <b>him</b> out, but I hope you will excuse me, sir, I did not feel inclined to do so.
+<br>
+"help <b>him</b> out": (a) pony (b) young gentleman
+<br>
+Answer: (b) young gentleman
+</li>
+
+<li>
+After I saw Bill catching flies and pulling off their wings, I boxed his ears. I showed the master the flies, some crushed and some crawling about helpless, and I showed <b>him</b> the wings on the window sill. I never saw him so angry before; but as Bill was still howling and whining, like the coward that he was, he did not give him any more punishment of that kind, but set him up on a stool for the rest of the afternoon, and said that he should not go out to play for that week.
+<br>
+"I showed <b>him</b> the wings": (a) Bill (b) the master
+<br>
+Answer: (b) the master
+</li>
+
+<li>
+After I saw Bill catching flies and pulling off their wings, I boxed his ears. I showed the master the flies, some crushed and some crawling about helpless, and I showed him the wings on the window sill. I never saw <b>him</b> so angry before; but as Bill was still howling and whining, like the coward that he was, he did not give him any more punishment of that kind, but set him up on a stool for the rest of the afternoon, and said that he should not go out to play for that week.
+<br>
+"I never saw <b>him</b>": (a) Bill (b) the master
+<br>
+Answer: (b) the master
+</li>
+
+<li>
+After I saw Bill catching flies and pulling off their wings, I boxed his ears. I showed the master the flies, some crushed and some crawling about helpless, and I showed him the wings on the window sill. I never saw him so angry before; but as Bill was still howling and whining, like the coward that <b>he</b> was, he did not give him any more punishment of that kind, but set him up on a stool for the rest of the afternoon, and said that he should not go out to play for that week.
+<br>
+"coward that <b>he</b> was": (a) Bill (b) the master
+<br>
+Answer: (a) Bill
+</li>
+
+<li>
+After I saw Bill catching flies and pulling off their wings, I boxed his ears. I showed the master the flies, some crushed and some crawling about helpless, and I showed him the wings on the window sill. I never saw him so angry before; but as Bill was still howling and whining, like the coward that he was, <b>he</b> did not give him any more punishment of that kind, but set him up on a stool for the rest of the afternoon, and said that he should not go out to play for that week.
+<br>
+"<b>he</b> did not give": (a) Bill (b) the master
+<br>
+Answer: (b) the master
+</li>
+
+<li>
+After I saw Bill catching flies and pulling off their wings, I boxed his ears. I showed the master the flies, some crushed and some crawling about helpless, and I showed him the wings on the window sill. I never saw him so angry before; but as Bill was still howling and whining, like the coward that he was, he did not give <b>him</b> any more punishment of that kind, but set him up on a stool for the rest of the afternoon, and said that he should not go out to play for that week.
+<br>
+"give <b>him</b> any more punishment": (a) Bill (b) the master
+<br>
+Answer: (a) Bill
+</li>
+
+<li>
+After I saw Bill catching flies and pulling off their wings, I boxed his ears. I showed the master the flies, some crushed and some crawling about helpless, and I showed him the wings on the window sill. I never saw him so angry before; but as Bill was still howling and whining, like the coward that he was, he did not give him any more punishment of that kind, but set <b>him</b> up on a stool for the rest of the afternoon, and said that he should not go out to play for that week.
+<br>
+"set <b>him</b> up on a stool": (a) Bill (b) the master
+<br>
+Answer: (a) Bill
+</li>
+
+<li>
+After I saw Bill catching flies and pulling off their wings, I boxed his ears. I showed the master the flies, some crushed and some crawling about helpless, and I showed him the wings on the window sill. I never saw him so angry before; but as Bill was still howling and whining, like the coward that he was, he did not give him any more punishment of that kind, but set him up on a stool for the rest of the afternoon, and said that <b>he</b> should not go out to play for that week.
+<br>
+"<b>he</b> should not go out": (a) Bill (b) the master
+<br>
+Answer: (a) Bill
+</li>
+
+<li>
+Sir Clifford wants me to find him a new groom, about twenty or twenty-one, who knows <b>his</b> business. His old coachman is getting feeble, and he wants a man to work with him and get into his ways, who would be able, when the old man was pensioned off, to step into his place.
+<br>
+"knows <b>his</b> business": (a) Sir Clifford (b) new groom
+<br>
+Answer: (b) new groom
+</li>
+
+<li>
+Sir Clifford wants me to find him a new groom, about twenty or twenty-one, who knows his business. <b>His</b> old coachman is getting feeble, and he wants a man to work with him and get into his ways, who would be able, when the old man was pensioned off, to step into his place.
+<br>
+"<b>His</b> old coachman": (a) Sir Clifford (b) new groom
+<br>
+Answer: (a) Sir Clifford
+</li>
+
+<li>
+Sir Clifford wants me to find him a new groom, about twenty or twenty-one, who knows his business. His old coachman is getting feeble, and <b>he</b> wants a man to work with him and get into his ways, who would be able, when the old man was pensioned off, to step into his place.
+<br>
+"<b>he</b> wants a man": (a) Sir Clifford (b) new groom (c) old coachman
+<br>
+Answer: (a) Sir Clifford
+<br>
+Note: Arguably, (c) old coachman could also work as an answer. Ambiguous questions of this sort will not occur in the competition.
+</li>
+
+<li>
+Sir Clifford wants me to find him a new groom, about twenty or twenty-one, who knows his business. His old coachman is getting feeble, and he wants a man to work with <b>him</b> and get into his ways, who would be able, when the old man was pensioned off, to step into his place.
+<br>
+"work with <b>him</b>": (a) Sir Clifford (b) new groom (c) old coachman
+<br>
+Answer: (c) old coachman
+</li>
+
+<li>
+Sir Clifford wants me to find him a new groom, about twenty or twenty-one, who knows his business. His old coachman is getting feeble, and he wants a man to work with him and get into <b>his</b> ways, who would be able, when the old man was pensioned off, to step into his place.
+<br>
+"get into <b>his</b> ways": (a) Sir Clifford (b) new groom (c) old coachman
+<br>
+Answer: (c) old coachman
+</li>
+
+<li>
+Sir Clifford wants me to find him a new groom, about twenty or twenty-one, who knows his business. His old coachman is getting feeble, and he wants a man to work with him and get into his ways, who would be able, when the old man was pensioned off, to step into <b>his</b> place.
+<br>
+"step into <b>his</b> place": (a) Sir Clifford (b) new groom (c) old coachman
+<br>
+Answer: (c) old coachman
+</li>
+
+<li>
+My master and mistress decided to pay a visit to some friends who lived about forty-six miles from our home, and James was to drive <b>them</b>.
+<br>
+"drive <b>them</b>": (a) master and mistress (b) some friends
+<br>
+Answer: (a) master and mistress
+</li>
+
+<li>
+A man's life and a horse's life are worth more than some foxes' tails; al least <b>they</b> ought to be.
+<br>
+"<b>they</b> ought to be": (a) a man's life and a horse's life (b) foxes' tails
+<br>
+Answer: (a) a man's life and a horse's life
+</li>
+
+<li>
+When my parents died, I was not earning enough to keep myself or my crippled sister Nelly, and without our kind mistress, we would have gone to the poorhouse. Nelly calls <b>her</b> her angel and she has good right to do so.
+<br>
+"Nelly calls <b>her</b>": (a) Nelly (b) mistress
+<br>
+Answer: (b) mistress
+</li>
+
+<li>
+When my parents died, I was not earning enough to keep myself or my crippled sister Nelly, and without our kind mistress, we would have gone to the poorhouse. Nelly calls her <b>her</b> angel and she has good right to do so.
+<br>
+"<b>her</b> angel ": (a) Nelly (b) mistress
+<br>
+Answer: (a) Nelly
+</li>
+
+<li>
+When my parents died, I was not earning enough to keep myself or my crippled sister Nelly, and without our kind mistress, we would have gone to the poorhouse. Nelly calls her her angel and <b>she</b> has good right to do so.
+<br>
+"<b>she</b> has good right":
+<br>
+Answer: (a) Nelly
+</li>
+
+<li>
+Our mistress hired a room for my crippled sister Nelly, and <b>she</b> gave her knitting and needlework when she was able to do it, and when she was ill she sent her dinners and many nice comfortable things and was like a mother to her
+<br>
+"<b>she</b> gave": (a) mistress (b) Nelly
+<br>
+Answer: (a) mistress
+</li>
+
+<li>
+Our mistress hired a room for my crippled sister Nelly, and she gave <b>her</b> knitting and needlework when she was able to do it, and when she was ill she sent her dinners and many nice comfortable things and was like a mother to her
+<br>
+"gave <b>her</b> knitting": (a) mistress (b) Nelly
+<br>
+Answer: (b) Nelly
+</li>
+
+<li>
+Our mistress hired a room for my crippled sister Nelly, and she gave her knitting and needlework when <b>she</b> was able to do it, and when she was ill she sent her dinners and many nice comfortable things and was like a mother to her
+<br>
+"when <b>she</b> was able": (a) mistress (b) Nelly
+<br>
+Answer: (b) Nelly
+</li>
+
+
+<li>
+Our mistress hired a room for my crippled sister Nelly, and she gave her knitting and needlework when she was able to do it, and when <b>she</b> was ill she sent her dinners and many nice comfortable things and was like a mother to her
+<br>
+"when <b>she</b> was ill": (a) mistress (b) Nelly
+<br>
+Answer: (b) Nelly
+</li>
+
+
+
+<li>
+Our mistress hired a room for my crippled sister Nelly, and she gave her knitting and needlework when she was able to do it, and when she was ill <b>she</b> sent her dinners and many nice comfortable things and was like a mother to her
+<br>
+"<b>she</b> sent": (a) mistress (b) Nelly
+<br>
+Answer: (a) mistress
+</li>
+
+<li>
+Our mistress hired a room for my crippled sister Nelly, and she gave her knitting and needlework when she was able to do it, and when she was ill she sent <b>her</b> dinners and many nice comfortable things and was like a mother to her
+<br>
+"sent <b>her</b> dinners": (a) mistress (b) Nelly
+<br>
+Answer: (b) Nelly
+</li>
+
+<li>
+Our mistress hired a room for my crippled sister Nelly, and she gave her knitting and needlework when she was able to do it, and when she was ill she sent her dinners and many nice comfortable things and was like a mother to <b>her</b>
+<br>
+"like a mother to <b>her</b>": (a) mistress (b) Nelly
+<br>
+Answer: (b) Nelly
+</li>
+
+
+
+
+</ol>
+
+<h3>WSC-I Challenge Disambiguation Problems</h3>
+
+
+The full set of problems in the first Winograd Schema Challenge, held at IJCAI-16, can be found <a href="http://www.cs.nyu.edu/faculty/davise/papers/PDPChallenge.xml">here</a>
+
+
+
+
+</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="grid_12" id="site_info">
+				<div class="box">
+					<p>For questions or comments about commonsensereasoning.org please email <a href="mailto:leora@cs.nyu.edu">leora@cs.nyu.edu</a>.</p>
+                    <p>Website design by <a href="http://www.benjaminjohnston.com.au/">Benjamin Johnston</a>, based on the <a href="http://www.designinfluences.com/fluid960gs/">Fluid 960 Grid System</a> by <a href="http://www.domain7.com/WhoWeAre/StephenBau.html">Stephen Bau</a> and <a href="http://sonspring.com/journal/960-grid-system">Nathan Smith</a>. Crowd photo by <a href="http://james.cridland.net/">James Cridland</a>.</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.5.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery-fluid16.js"></script>
+	</body>
+</html>

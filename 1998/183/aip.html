@@ -1,0 +1,153 @@
+<p><HTML>
+<BODY BGCOLOR="#fffaff" TEXT="#000000" LINK="0000ff" VLINK="000080">
+<div style="background:#ff6; padding:15px; border:1px solid #f00; text-align:center; font-weight:bold; width:95%;">
+This page is a historical archive. For the latest information please visit <a href="http://www.commonsensereasoning.org/">commonsensereasoning.org</a>.
+</div>
+
+<table border=1 cellspacing=0 cellpadding=5>
+<tr>
+<td width="68%" bgcolor="#ccddee">
+<h2>Brian Knight, Taoxin Peng, and Jixin Ma</h2>
+<h2>Reasoning about Change over Time: Actions, Events, and their Effects.</h2>
+</td><td width="12%" align=right valign=top bgcolor="#d4ddbb">
+<b>c-fcs-98-183<br>&#160;<br>
+[<a href="/ext/etai/nj/fcs-98/183/paper.ps">original</a>]<br>
+[<a href="http://www.gre.ac.uk/~t.peng/cs98.html">revised</a>]<br>
+[<a href="/ext/etai/nj/fcs-98/183/abstract.html">abstract</a>]<br>
+
+
+  </td><td width="20%" align=right valign=top bgcolor="#dddddd">
+[<a href="mailto:b.knight@greenwich.ac.uk">mail to author</a>]<br>&#160;<br>
+
+  [<a href="mailto: erisa@ida.liu.se">mail to moderator</a>]<br>
+  [<a href="../debproc.html">debate
+     procedure</a>]<br>
+  [<a href="../copyright.html">copyright</a>]
+  </tr></table>
+
+<center>
+<h1>Overview of interactions</h1>
+</center>
+
+<table width="100%" border=1 cellspacing=0 cellpadding=5>
+
+<tr bgcolor="#e0e8e8">
+<th width="4%" align=left>N:o</th>
+<th width="38%" align=left>Question</th>
+<th width="38%" align=left>Answer(s)</th>
+<th width="20%" align=left>Continued discussion</th>
+</tr>
+
+
+<tr bgcolor="#d4ddbb">
+<td width="4%" align=center valign=top bgcolor="dddddd">1 </td>
+
+<td width="40%" valign=top>
+    <a href="#001">7.1&#160;&#160;Erik Sandewall</a><br>
+</td>
+<td width="16%" valign=top>
+    <a href="#003">26.1&#160;&#160;Jixin Ma</a><br>
+</td>
+<td width="40%" valign=top>
+    <a href="#004">7.1&#160;&#160;Erik Sandewall</a><br>
+    <a href="#002">26.1&#160;&#160;Jixin Ma</a><br>
+</td>
+</tr>
+</table>
+<p><font size=+1><a name="001">Q1. </a><b><a href="http://www.ida.liu.se/~erisa/index-eng.html">Erik Sandewall</a></b>:</font><p>
+<p> A fairly large part of your work is devoted to the time 
+structure. Then, under "future work" you mention addressing the 
+topic of continuous change. Won't you then have to use the real 
+numbers (or something similar) as time structure?
+<p><font size=+1><a name="003">A1. </a><b><a href="http://www.gre.ac.uk./~j.ma">Jixin Ma</a></b> (26.1):</font><p>
+<p>Yes, though it is not necessary to directly use the real 
+numbers as the time structure. In fact, a general time theory based 
+on both points and intervals is proposed previously (The Computer 
+Journal 37(2), 1994, pp.114-123). With the corresponding density 
+axioms, it seems appropriate for addressing continuous change.
+<p><font size=+1><a name="004">C1-1. </a><b><a href="http://www.ida.liu.se/~erisa/index-eng.html">Erik Sandewall</a></b>:</font><p>
+<p>In this case, why don't you introduce them at once, even for 
+the present work?  Is there some essential aspect of the present 
+results that you are going to lose when you proceed to continuous 
+change?
+<p><font size=+1><a name="002">C1-2. </a><b><a href="http://www.gre.ac.uk./~j.ma">Jixin Ma</a></b> (26.1):</font><p>
+<p>First of all, the approch addressing both moments and points as 
+primitive is proposed in the paper in order to overcome the 
+so-called Dividing Instant Problem, i.e., the problem in specifying 
+if intervals is "closed"/"open" at their ending points in the case 
+intervals are constructed out of points. It is argued again and again 
+by many researchers that no solution is satisfactory to the question 
+of what preconception about the closed/open nature of intervals 
+should be taken:
+<ul>
+
+<li>If all intervals include their ending-points, then 
+adjacent intervals would have ending-points in common. Hence, if two 
+adjacent intervals correspond to a given fluent and its negation, 
+respectively, there will be a point at which the fluent is both true 
+and false. 
+<p>
+<li>Similarly, if all intervals don't include their 
+ending-points, there will be points at which the truth or falsity of 
+some fluents are undefined. 
+<p>
+<li>Another approach is to take point-based 
+intervals as semi-open (e.g., all intervals include their left 
+ending-points, and exclude their right ones) so that they may sit 
+conveniently next to one another. However, on the one hand, since 
+this approach insists that every interval contains only a single 
+ending-point, the choice of which ending-point of intervals should be 
+included/excluded seems arbitrary, and hence unjustifiable and 
+artificial. On the other hand, although the approach may offer a 
+solution to some practical questions, there are some other critical 
+questions which remain problematical. The fundamental reason is that 
+in a system where time intervals are all taken as semi-open, it will 
+be difficult to represent time points in a consistent structure so 
+that they can stand between intervals conveniently. 
+</ul>
+
+<p>
+There are three reasons of taking a discrete time structure: 
+<p>
+1. It is simple and adequate for many practical applications. 
+<p>
+2. It is noted that, if time intervals are addressed as temporal 
+objects which can be associated with fluents by  meta-predicates such 
+as "HOLDS" or "TRUE", one shall face the possibility that a fluent 
+might be neither true nor false throughout some interval. In the 
+worst case, the so-called intermingling problem may arise, that is 
+the possibility of a fluent changing its truth value infinitely often 
+in an interval with a finite duration. This will lead to some 
+difficulties in characterising the relationships between the negation 
+of a fluent and the negation of involved sentances. 
+<p>
+The approach that 
+addresses intervals as a finite ordered union of points/moments 
+sucessfully overcomes (or at least bypasses) such a problem. For the
+purpose of modelling continuous change, it seems necessary (this 
+maybe arguable) to extend such a discrete time model to a dense one. 
+However, in this case, some careful treatments have to be taken for 
+dealing with the Intermingling Problem.
+<p>
+3. Since times are explicitly addressed in the formalism, the 
+corresponding Frame Problem would become more difficult to be handled
+if the time structure is modelled as dense in the first place. Hence,
+the strategy is to tackle the simple case (that is, the discrete
+model) first, then to extend the idea to the general case.
+<p><hr>
+<p>This on-line debate page is part of a
+<b><a href="../listing.html">discussion at recent workshop</a></b>;
+similar pages are set up for each of the workshop articles.
+The discussion is organized by the area
+<a href="http://www.ida.liu.se/ext/etai/actions/">Reasoning about
+Actions and Change</a> within the
+<b>Electronic Transactions on Artificial Intelligence</b>
+(<a href="http://www.ida.liu.se/ext/etai/">ETAI</a>).
+<p>
+
+To contribute, please click [mail to moderator] above and send your 
+question or comment as an E-mail message.
+<p>
+<hr>
+<p>
+</body> </html>

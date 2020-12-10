@@ -1,0 +1,107 @@
+/* CSS Document */
+
+/* CSS Document */
+
+
+.contact {
+	font-size: .65em;
+	vertical-align: middle;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 5px;
+}
+#inlinelist li {
+	display: inline;
+	font-size: .65em;
+	margin:0;
+	}
+	
+#section_header_white {
+	font-size: 14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+    }
+	
+#section_header_white a:link{
+    font-size: 14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	}
+
+#section_header_white a:visited{
+    font-size: 14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	}
+	
+#section_header_white a:hover{
+    font-size: 14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#section_header_white a:active {
+	font-size: 14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+	
+#section_subheader_white{
+	font-size: 11px;
+	font-weight:lighter;
+	color:#FFFFFF;
+	padding-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+    }
+	
+	#section_subheader_white_normal{
+	font-size: 12px;
+	font-weight: bold;
+	color:#FFFFFF;
+	padding-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+    }
+	
+#section_subheader_white a:link{
+    font-size: 11px;
+	font-weight:lighter;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	}
+	
+#section_subheader_white a:visited{
+    font-size: 11px;
+	font-weight:lighter;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	}
+	
+#section_subheader_white a:hover{
+    font-size: 11px;
+	font-weight:lighter;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#section_subheader_white a:active {
+	font-size: 11px;
+	font-weight:lighter;
+	color:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
